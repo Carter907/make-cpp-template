@@ -1,6 +1,6 @@
-build: main.c
+build: main.cpp
 	mkdir build
-	gcc -g -Wall -Werror main.c -lm
+	g++ -g -Wall -Werror main.cpp -lm
 	mv a.out ./build
 
 debug: clean build
